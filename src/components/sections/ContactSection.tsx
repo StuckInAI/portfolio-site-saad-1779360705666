@@ -20,14 +20,13 @@ export default function ContactSection() {
   });
   const [status, setStatus] = useState<Status>('idle');
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
-    // Simulate async send
     setTimeout(() => {
       setStatus('success');
       setForm({ name: '', email: '', subject: '', message: '' });
@@ -108,7 +107,7 @@ export default function ContactSection() {
                       required
                       placeholder="Your name"
                       className="w-full px-4 py-3 rounded-xl text-sm text-white placeholder-slate-600 outline-none focus:ring-1 transition-all"
-                      style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', focusRingColor: '#6c63ff' }}
+                      style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}
                     />
                   </div>
                   <div>
@@ -163,7 +162,7 @@ export default function ContactSection() {
                   {status === 'loading' ? (
                     <>
                       <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                      Sending…
+                      Sending
                     </>
                   ) : (
                     <>
