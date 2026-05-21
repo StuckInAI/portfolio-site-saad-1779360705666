@@ -1,0 +1,118 @@
+import type { Project, Skill, Experience } from '@/types';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'NeuraFlow AI Dashboard',
+    description: 'A real-time analytics platform powered by machine learning, visualizing complex data streams with interactive charts and predictive insights.',
+    tags: ['React', 'TypeScript', 'Python', 'TensorFlow', 'D3.js'],
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+    liveUrl: '#',
+    githubUrl: '#',
+    featured: true,
+  },
+  {
+    id: '2',
+    title: 'Orbit E-Commerce',
+    description: 'A full-stack shopping platform with blazing-fast performance, real-time inventory, and seamless checkout experiences.',
+    tags: ['Next.js', 'Stripe', 'PostgreSQL', 'Tailwind'],
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+    liveUrl: '#',
+    githubUrl: '#',
+    featured: true,
+  },
+  {
+    id: '3',
+    title: 'Synthwave Music App',
+    description: 'A Spotify-inspired music streaming interface with custom audio visualizers, playlist management, and social listening features.',
+    tags: ['React', 'Web Audio API', 'Node.js', 'Socket.io'],
+    image: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&q=80',
+    liveUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
+  {
+    id: '4',
+    title: 'DevCollab Platform',
+    description: 'A real-time collaborative coding environment with pair programming, code review tools, and integrated CI/CD pipelines.',
+    tags: ['Vue.js', 'WebRTC', 'Go', 'Docker', 'Redis'],
+    image: 'https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800&q=80',
+    liveUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
+  {
+    id: '5',
+    title: 'GreenPath Sustainability Tracker',
+    description: 'Mobile-first app helping users track and reduce their carbon footprint with gamified challenges and community goals.',
+    tags: ['React Native', 'GraphQL', 'MongoDB', 'AWS'],
+    image: 'https://images.unsplash.com/photo-1542601906897-ecd25d39f98f?w=800&q=80',
+    liveUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
+  {
+    id: '6',
+    title: 'CryptoVault Portfolio',
+    description: 'A cryptocurrency portfolio tracker with live price feeds, profit/loss analysis, and customizable alert notifications.',
+    tags: ['React', 'WebSockets', 'Chart.js', 'Zustand'],
+    image: 'https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=800&q=80',
+    liveUrl: '#',
+    githubUrl: '#',
+    featured: false,
+  },
+];
+
+export const skills: Skill[] = [
+  { name: 'React / Next.js', level: 95, category: 'frontend' },
+  { name: 'TypeScript', level: 90, category: 'frontend' },
+  { name: 'Tailwind CSS', level: 92, category: 'frontend' },
+  { name: 'Vue.js', level: 78, category: 'frontend' },
+  { name: 'Node.js', level: 88, category: 'backend' },
+  { name: 'Python', level: 82, category: 'backend' },
+  { name: 'PostgreSQL', level: 80, category: 'backend' },
+  { name: 'GraphQL', level: 75, category: 'backend' },
+  { name: 'Docker', level: 85, category: 'tools' },
+  { name: 'AWS / Cloud', level: 78, category: 'tools' },
+  { name: 'Git / CI-CD', level: 90, category: 'tools' },
+  { name: 'Figma', level: 80, category: 'design' },
+];
+
+export const experiences: Experience[] = [
+  {
+    id: '1',
+    role: 'Senior Frontend Engineer',
+    company: 'Luminary Tech',
+    period: '2022 — Present',
+    description: [
+      'Led a team of 5 to rebuild the core product UI, improving load time by 60%.',
+      'Architected a component library used across 8 product lines.',
+      'Mentored junior engineers and established code review processes.',
+    ],
+    logo: '🚀',
+  },
+  {
+    id: '2',
+    role: 'Full-Stack Developer',
+    company: 'Nova Systems',
+    period: '2020 — 2022',
+    description: [
+      'Built RESTful APIs serving 500k+ daily active users.',
+      'Implemented real-time features using WebSockets and Redis pub/sub.',
+      'Reduced AWS infrastructure costs by 35% through optimization.',
+    ],
+    logo: '⚡',
+  },
+  {
+    id: '3',
+    role: 'Frontend Developer',
+    company: 'Pixel Studio',
+    period: '2018 — 2020',
+    description: [
+      'Developed responsive web apps for 20+ enterprise clients.',
+      'Created custom animation libraries and interactive data visualizations.',
+      'Collaborated with design teams to implement pixel-perfect UIs.',
+    ],
+    logo: '🎨',
+  },
+];
