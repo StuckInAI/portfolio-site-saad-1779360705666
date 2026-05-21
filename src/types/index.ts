@@ -28,3 +28,10 @@ export type NavItem = {
   label: string;
   href: string;
 };
+
+export type ContactForm = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
